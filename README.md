@@ -147,4 +147,3 @@ Latency Stats (Microseconds):
 * **Durability (ACID)**: Uses raw POSIX file descriptor calls (`open`, `write`, `fsync`) to bypass OS write buffers and guarantee durability.
 * **Tombstone Eviction**: Deletions are written as tombstones (`kTypeDeletion`) and are fully cleaned/evicted from the disk once they migrate to the bottom level (Level 1) during compaction.
 * **Double Buffering**: Prevents write-stalling during memory-to-disk flushes by using an active MemTable alongside an immutable `frozen_memtable_` that is flushed in the background.
-# LSM-Tree-Key-Value-Storage-Engine
