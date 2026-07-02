@@ -1,0 +1,24 @@
+# Compiled Binaries
+lsm_cli
+lsm_benchmark
+test_phase1
+test_phase2
+test_phase3
+
+# Build Objects
+obj/
+*.o
+
+# macOS system files
+.DS_Store
+*.dSYM/
+
+# Local Database Directories
+db_data/
+db_bench_data/
+test_db_manifest/
+test_db_compact/
+
+# Temporary storage files
+*.wal
+*.sst
